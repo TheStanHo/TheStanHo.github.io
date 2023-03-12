@@ -36,23 +36,30 @@
       }
     },
     {
-      "label": "PWA (Offline Support)",
+      "label": "FluentBit",
       "image": {
-        "src": "../../images/mobile-phone.png",
+        "src": "../../images/FluentBit.png",
         "alt": ""
       }
     },
     {
-      "label": "Modern Tech-Stack",
+      "label": "Prometheus",
       "image": {
-        "src": "../../images/gatsby.png",
+        "src": "../../images/Prometheus.png",
         "alt": ""
       }
     },
     {
-      "label": "Blazing Fast",
+      "label": "Powershell",
       "image": {
-        "src": "../../images/high-voltage.png",
+        "src": "../../images/Powershell.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "New Relic",
+      "image": {
+        "src": "../../images/New-Relic.png",
         "alt": ""
       }
     }
