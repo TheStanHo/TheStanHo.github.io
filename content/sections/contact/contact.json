@@ -1,10 +1,10 @@
 {
-  "name": "Gatsby Starter For Portfolio Minimal",
+  "name": "Stan Ho - DevOps Engineer",
   "email": "stan1904@hotmail.co.uk",
-  "description": "If you have any problems with this theme, create an issue in the GitHub repository.",
+  "description": "If you would like to get into contact with me feel free via links below",
   "image": {
     "src": "../../images/favicon.png",
-    "alt": "Gatsby Logo"
+    "alt": "SH Logo"
   },
   "socialProfiles": {
     "from": ["LinkedIn", "Github", "Mail"],
