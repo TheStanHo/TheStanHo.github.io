@@ -18,3 +18,4 @@ npm run deploy
 
 ## Credit
 Template used is by: Konstantin Muenster. The link to the repo is can be found [here](https://github.com/konstantinmuenster/gatsby-theme-portfolio-minimal)
+More information about this can be found [here](https://www.gatsbyjs.com/plugins/gatsby-theme-portfolio-minimal/#section-components)

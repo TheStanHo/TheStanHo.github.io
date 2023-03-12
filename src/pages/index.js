@@ -20,9 +20,9 @@ export default function IndexPage() {
       <Seo title="StanHo" />
       <Page useSplashScreenAnimation>
         <HeroSection sectionId="hero" />
-        <ArticlesSection sectionId="articles" heading="Latest Blogs" sources={['Blog']} />
+        <ArticlesSection sectionId="articles" heading="Latest Blog" sources={['blog']} />
         <AboutSection sectionId="about" heading="A little bit about me" />
-        <InterestsSection sectionId="details" heading="Details" />
+        <InterestsSection sectionId="details" heading="Toolbox" />
       </Page>
     </>
   );
