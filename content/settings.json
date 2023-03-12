@@ -17,7 +17,7 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "Under Construction..." },
+    "logo": { "text": "🚧Under Construction...🚧" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },

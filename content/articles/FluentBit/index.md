@@ -11,11 +11,10 @@ categories:
 keywords:
   - "Monitoring"
   - "FluentBit"
-  - "Markdown"
   - "Blog"
 ---
 
-# To be Written!
+# 🚧To be Written!🚧
 
 <!-- ## Code block test
 
