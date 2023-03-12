@@ -1,9 +1,9 @@
 {
   "interests": [
     {
-      "label": "Quick and Easy Setup",
+      "label": "Microsoft Azure",
       "image": {
-        "src": "../../images/joystick.png",
+        "src": "../../images/azure.png",
         "alt": ""
       }
     },
