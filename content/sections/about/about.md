@@ -3,12 +3,8 @@ imageSrc: "../../images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"
 imageAlt: "Computer through glasses"
 ---
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+I started my DevOps career about 3 years ago. I actually started as an IT graduate and then requested to join a guy who was working solo deploying the cloud resources for the company. That is when the DevOps Team formed. The company I worked for offers solutions in Healthcare, with the Covid pandemic occurring the UK needed to come up with a software solution to register vaccinations. I worked on a project to help deploy and monitor this system called <a href="https://www.graphnethealth.com/solutions/vaccinations/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>NIMs - National Immunisation Management System</u></a>. 
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
-
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
-
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
+After working on this. I decided for a new challenge and moved to Frontiers a publishing company with the goal of making Science opening
 
 Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Kevin Ku</u></a> on Unsplash
