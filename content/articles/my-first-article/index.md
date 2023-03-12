@@ -1,7 +1,7 @@
 ---
 title: "The wonders of FluentBit"
 description: "The wonders of FluentBit"
-date: "2021-05-28"
+date: "2023-03-12"
 banner:
   src: "../../images/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg"
   alt: "FluentBit Post"
