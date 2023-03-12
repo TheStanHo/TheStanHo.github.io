@@ -14,9 +14,9 @@
     "highlight": "DevOps Engineer",
     "suffix": "."
   },
-  "description": "A website for blogs and my works",
+  "description": "A Website for blogs and my works",
   "socialProfiles": {
-    "from": ["LinkedIn", "Medium", "Github", "Mail"],
-    "showIcons": false
+    "from": ["LinkedIn", "Github", "Email"],
+    "showIcons": true
   }
 }
