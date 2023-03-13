@@ -7,6 +7,6 @@ I started my DevOps career about 3 years ago. I actually started as an IT gradua
 
 After working on this. I decided for a new challenge and moved to Frontiers a publishing company with the goal of making Science opening.
 
-I've always had an interest in technology, problem solving and learning. Working in DevOps allows me to combine all those aspects together while benefiting others.
+I've always had an interest in technology, problem solving and learning. Working in DevOps allows me to combine all those aspects together into a career that benefits others
 
 Photo by <a href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Kevin Ku</u></a> on Unsplash
