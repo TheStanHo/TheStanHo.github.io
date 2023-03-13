@@ -17,7 +17,7 @@
     }
   },
   "siteConfiguration": {
-    "logo": { "text": "🚧Under Construction...🚧" },
+    "logo": { "text": "StanHo - DevOps Engineer" },
     "navigation": {
       "header": [
         { "label": "About", "url": "/#about" },
@@ -30,7 +30,7 @@
     "featureToggles": {
       "useDarkModeAsDefault": false,
       "useDarkModeBasedOnUsersPreference": true,
-      "useCookieBar": false
+      "useCookieBar": true
     }
   }
 }
