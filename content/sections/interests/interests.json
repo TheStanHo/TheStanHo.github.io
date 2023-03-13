@@ -62,6 +62,20 @@
         "src": "../../images/New-Relic.png",
         "alt": ""
       }
+    },
+    {
+      "label": "Grafana",
+      "image": {
+        "src": "../../images/Grafana.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Retool",
+      "image": {
+        "src": "../../images/Retool.png",
+        "alt": ""
+      }
     }
   ],
   "button": {

@@ -1,6 +1,6 @@
 ---
-title: "The wonders of FluentBit"
-description: "The wonders of FluentBit"
+title: "The Wonders of FluentBit"
+description: "The Wonders of FluentBit"
 date: "2023-03-12"
 banner:
   src: "../../images/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg"
@@ -8,9 +8,13 @@ banner:
   caption: 'Photo by <u><a href="https://unsplash.com/photos/oQD9uq4Rd4I">Michał Jakubowski</a></u>'
 categories:
   - "Monitoring"
+  - "Kubernetes"
+  - "AKS"
 keywords:
   - "Monitoring"
   - "FluentBit"
+  - "Kubernetes"
+  - "AKS"
   - "Blog"
 ---
 
