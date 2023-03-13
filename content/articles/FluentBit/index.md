@@ -4,7 +4,7 @@ description: "The Wonders of FluentBit"
 date: "2023-03-12"
 banner:
   src: "../../images/michal-jakubowski-oQD9uq4Rd4I-unsplash.jpg"
-  alt: "FluentBit Post"
+  alt: "FluentBit Background"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/oQD9uq4Rd4I">Michał Jakubowski</a></u>'
 categories:
   - "Monitoring"
