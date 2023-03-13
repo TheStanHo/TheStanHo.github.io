@@ -24,7 +24,43 @@
 <li>To check your code is valid before you can commit it to the master branch e.g. very useful once branch policies are set up for Pull requests</li>
 <li>So that you can check the what changes will be made to the infrastructure if you deploy the Terraform scripts. As you can see from the example below one of the build steps is a "Terraform Plan" step which will show us the changes that will be made to the infrastructre, here it will create an Azure Kubernetes cluster. Terraform Plan is nicely formatted at the build pipeline with symbols with "+ = create", "- = destroy" and "~ = changes".</li>
 </ol>
-<p><img src="../../images/AutomateTerraformInfrastructureDeployments/Terraform%20Plan%20Example.png" alt="Terraform Plan">
+<p><figure class="gatsby-resp-image-figure" style="">
+    <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 588px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 84.84848484848484%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAB70lEQVR42n2S/W6bMBTF+xyNbQwEsK8/sQ02EGhC2mSqqr3/40xk0zRpDdKV7H9+PsfnnpemrjhreFNz1gDfRgIIYKyugDPB2bHIM4JpRv6fl9iHeRqnFDvv+uBPY4pd6DvfeX8ahtMYndUEo+/hqiqt0XVVFjktivxY5EVO85yWvy80y2n2LbnBErhWQgEYJbUSEsBqpZW0WuU0e2b4D8x5s8xT8O2Q4jaxG1PczAffBx9864yxWksprNEC+L/PvdA8c86OQ0yxN0Zbo7SUrrW996kLv/WfKmN00FZ9/bgPsTdaeWetVs61t3V9m0/n86IFYIzyb2GCMQAD3qDDa04zghFGByVFDCF4l1KvBMfP0sYIWWc+77f7+/V9vXTeZwS7tr2/b8rX9ayAPV0VwUhIPg1pHJIAVh1LmhEAHrsQXBu70FTHpyUhm7L++fV5u17Py8zqCh1evWtv13UahmU+Sd7sKGMObEyxfmgWOSUYAfB5HE7T2NR1Qele2rbVH+sl9X0X3BYPOlhjPi7ny7Kslzcl+J4yCHZ5m8/LnPpOAWzLU3KZxtQFoxSrd/78sO1bU+aUNXV1LDOCgfMYgm+tMWovsIzguqlarZUU1bFEh1eCEcEoIzgjeKdej3o+DgBmH90UnEsBEtgO8xf+BX+VnQOyZOz2AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/7a293f0fb1569183ff054586317cd11b/c9b55/Terraform-Plan-Example.webp 165w,
+/static/7a293f0fb1569183ff054586317cd11b/f2908/Terraform-Plan-Example.webp 330w,
+/static/7a293f0fb1569183ff054586317cd11b/c12c1/Terraform-Plan-Example.webp 588w"
+              sizes="(max-width: 588px) 100vw, 588px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/7a293f0fb1569183ff054586317cd11b/04c57/Terraform-Plan-Example.png 165w,
+/static/7a293f0fb1569183ff054586317cd11b/d9ecf/Terraform-Plan-Example.png 330w,
+/static/7a293f0fb1569183ff054586317cd11b/9bbaf/Terraform-Plan-Example.png 588w"
+            sizes="(max-width: 588px) 100vw, 588px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/7a293f0fb1569183ff054586317cd11b/9bbaf/Terraform-Plan-Example.png"
+            alt="Terraform Plan"
+            title="Example of Terraform Plan"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption"><p>Example of Terraform Plan</p></figcaption>
+  </figure>
 The following steps should be added to your Build Pipelines
 Note:</p>
 <ul>
