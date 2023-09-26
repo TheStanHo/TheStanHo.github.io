@@ -28,6 +28,7 @@ The module I chose to experiment with this evening was one that I read about onl
 To play with the Fabric module I created a local Docker Image to run locally on my PC. 
 DockerFile based on the one [here](https://dev.to/s1ntaxe770r/how-to-setup-ssh-within-a-docker-container-i5i)
 
+(Yes I know the password is super secure!👀)
 ```dockerfile
 FROM ubuntu:latest
 
