@@ -7,12 +7,12 @@ banner:
   alt: "Python Background"
   caption: 'Photo by <u><a href="https://unsplash.com/photos/ieic5Tq8YMk">Chris Ried</a></u>'
 categories:
-  - "Monitoring"
   - "Scripting"
+  - "Monitoring"
   - "Python"
 keywords:
-  - "Monitoring"
   - "Scripting"
+  - "Monitoring"
   - "Python"
   - "Blog"
   - "Fabric"
