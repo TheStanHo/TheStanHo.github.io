@@ -1,6 +1,6 @@
 ---
-title: "Python Scripting with Fabric"
-description: "Python Scripting with Fabric"
+title: "Python Scripting with Fabric library"
+description: "Python Scripting with Fabric library"
 date: "2023-08-26"
 banner:
   src: "../../images/chris-ried-ieic5Tq8YMk-unsplash.jpg"
