@@ -1,13 +1,13 @@
 {
   "name": "Stan Ho - DevOps Engineer",
-  "email": "StanHos@hotmail.co.uk",
+  "email": "",
   "description": "If you would like to get into contact with me feel free via links below",
   "image": {
     "src": "../../images/favicon.png",
     "alt": "SH Logo"
   },
   "socialProfiles": {
-    "from": ["LinkedIn", "Github", "Mail"],
+    "from": ["LinkedIn", "Github"],
     "showIcons": true
   }
 }
