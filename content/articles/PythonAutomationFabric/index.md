@@ -20,7 +20,7 @@ keywords:
 Having scripted mostly in Powershell & Bash the majority of my DevOps career (all of 3 years). I thought I would dabble in some Python scripting one evening. I have some Python experience having learned some basics during my Masters degree, I thought I might as well use this opportunity to refresh myself in the beloved language by many Software Developers and DevOps Engineers alike.
 
 ## Choosing the Module
-The module I chose to experiment with this evening was one that I read about online called "[Fabric](https://www.fabfile.org/)". It is described as a "... high level Pyton library designed to execute shell commands remotely over SSH, yielding Python objects in return". I chose this module to play around with this evening as I myself find it a hassle sometimes to run commands on linux VMs. Utlising this module we can:
+The module I chose to experiment with this evening was one that I read about online called "[Fabric](https://www.fabfile.org/)". It is described as a "... high level Pyton library designed to execute shell commands remotely over SSH, yielding Python objects in return". I chose this module to play around with this evening as I myself find it a hassle sometimes to run commands on linux VMs. Utlising this module we can do the following by just running the script locally:
 - Run commands on individual or multiple hosts at a time 
 - Automate commands that are used frequently either to solve issues or we can write Python script functions to 
 
