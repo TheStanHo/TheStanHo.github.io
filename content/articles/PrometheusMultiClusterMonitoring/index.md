@@ -30,7 +30,8 @@ The simplest option I came across is the Prometheus agent introduced in Promethe
 
 ## Overview of the set up
 In my opinion and experience the best way to implement this is shown in the diagram below. 
-![Prometheus architecture](../../images/PrometheusMultiClusterMonitoring/GenericArchitecture.pdf.png "Example of Advised architecture")
+<img src="../../images/PrometheusMultiClusterMonitoring/GenericArchitecture.png" width="476" height="616">
+
 
 In this model we will have: 
 - 2 Instances of Prometheus Server -> One for Production and another for Non-production. You can run this on the same AKS or separate it if you want to split your non-prod and prod metrics.
