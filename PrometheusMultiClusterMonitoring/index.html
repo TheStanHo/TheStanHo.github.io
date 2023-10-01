@@ -8,50 +8,38 @@
 </ul>
 <p>The simplest option I came across is the Prometheus agent introduced in Prometheus version 2.32.0. The agent mode deactivates certain features typically present in the Prometheus server, focusing solely on discovery, scraping, and remote write functions. This design choice is aimed at enhancing the performance of the Prometheus agent.</p>
 <h2>Overview of the set up</h2>
-<p>In my opinion and experience the best way to implement this is shown in the diagram below.
-<figure class="gatsby-resp-image-figure" style="">
-    <span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 63.03030303030304%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABpklEQVR42pVT22rcMBD1//9GoW95SUvYh0KghQ2mWUL6EBo2LKRJaTfeiy+ybjPSKRpbzqZJehkQkubMHJ/xjAqMFmNECFHOV/MKX04fBn/AM0uxr1lxGJQDm22P1aqF8QFEHt57OE+oaoKn8Cz+VcJBUdoj3pUdLm8UIlsYo1G3Fm8+1Ni1/t8JE552Zsas3OJ7pYU8xgClGSdlDefo/wgTgfeE4/kOd2sNJgdnDR62Ckef9jD2LwozcLiSQnI9mDxCSP+RRCVAgr2Uk8mLP3UsWSYcVL0ck/2JS0pmHpKUUrIcGXSqgzFGFKUuJ2KtNVTfodcKXafkPgg6ULi+1ekq3U3Jad1dN2hrixDDb2UFdLUVjAPLR5gC2p0DjeNUfD1bj6U91jM//gbX2CflZPzz7AduzjdTbL0xOH17CwQeCC9XBoulEdlh7DIFxuy8R61oKidPAXuLi2WH+42fRupnpbBYalFcLK47lFfNE0LrPN6f7bGdVA6EGT8pG1wslZyT3VcWRx/38poKIEnlqSRJ5Ozjxxc07jI2gRCYJGcYMxJfwn4BinH3kl049NwAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
+<p>In my opinion and experience the best way to implement this is shown in the diagram below.</p>
+<style>
+  .container {
+    overflow: scroll !important;
+    white-space: nowrap;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  img {
+    max-width: 1000%;
+  }
+</style>
+<div class="container">
+  <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 63.03030303030304%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABpklEQVR42pVT22rcMBD1//9GoW95SUvYh0KghQ2mWUL6EBo2LKRJaTfeiy+ybjPSKRpbzqZJehkQkubMHJ/xjAqMFmNECFHOV/MKX04fBn/AM0uxr1lxGJQDm22P1aqF8QFEHt57OE+oaoKn8Cz+VcJBUdoj3pUdLm8UIlsYo1G3Fm8+1Ni1/t8JE552Zsas3OJ7pYU8xgClGSdlDefo/wgTgfeE4/kOd2sNJgdnDR62Ckef9jD2LwozcLiSQnI9mDxCSP+RRCVAgr2Uk8mLP3UsWSYcVL0ck/2JS0pmHpKUUrIcGXSqgzFGFKUuJ2KtNVTfodcKXafkPgg6ULi+1ekq3U3Jad1dN2hrixDDb2UFdLUVjAPLR5gC2p0DjeNUfD1bj6U91jM//gbX2CflZPzz7AduzjdTbL0xOH17CwQeCC9XBoulEdlh7DIFxuy8R61oKidPAXuLi2WH+42fRupnpbBYalFcLK47lFfNE0LrPN6f7bGdVA6EGT8pG1wslZyT3VcWRx/38poKIEnlqSRJ5Ozjxxc07jI2gRCYJGcYMxJfwn4BinH3kl049NwAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
   <picture>
-          <source
-              srcset="/static/cdd2583c49b42db1fadd0844b226940a/c9b55/GenericArchitecture.pdf.webp 165w,
+          <source srcset="/static/cdd2583c49b42db1fadd0844b226940a/c9b55/GenericArchitecture.pdf.webp 165w,
 /static/cdd2583c49b42db1fadd0844b226940a/f2908/GenericArchitecture.pdf.webp 330w,
 /static/cdd2583c49b42db1fadd0844b226940a/cc661/GenericArchitecture.pdf.webp 660w,
 /static/cdd2583c49b42db1fadd0844b226940a/a66df/GenericArchitecture.pdf.webp 990w,
 /static/cdd2583c49b42db1fadd0844b226940a/d33d4/GenericArchitecture.pdf.webp 1320w,
-/static/cdd2583c49b42db1fadd0844b226940a/bc4fa/GenericArchitecture.pdf.webp 1985w"
-              sizes="(max-width: 660px) 100vw, 660px"
-              type="image/webp"
-            />
-          <source
-            srcset="/static/cdd2583c49b42db1fadd0844b226940a/04c57/GenericArchitecture.pdf.png 165w,
+/static/cdd2583c49b42db1fadd0844b226940a/bc4fa/GenericArchitecture.pdf.webp 1985w" sizes="(max-width: 660px) 100vw, 660px" type="image/webp">
+          <source srcset="/static/cdd2583c49b42db1fadd0844b226940a/04c57/GenericArchitecture.pdf.png 165w,
 /static/cdd2583c49b42db1fadd0844b226940a/d9ecf/GenericArchitecture.pdf.png 330w,
 /static/cdd2583c49b42db1fadd0844b226940a/1f083/GenericArchitecture.pdf.png 660w,
 /static/cdd2583c49b42db1fadd0844b226940a/7a3d6/GenericArchitecture.pdf.png 990w,
 /static/cdd2583c49b42db1fadd0844b226940a/78958/GenericArchitecture.pdf.png 1320w,
-/static/cdd2583c49b42db1fadd0844b226940a/d413f/GenericArchitecture.pdf.png 1985w"
-            sizes="(max-width: 660px) 100vw, 660px"
-            type="image/png"
-          />
-          <img
-            class="gatsby-resp-image-image"
-            src="/static/cdd2583c49b42db1fadd0844b226940a/1f083/GenericArchitecture.pdf.png"
-            alt="Prometheus architecture"
-            title="Example of Advised architecture"
-            loading="lazy"
-            decoding="async"
-            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-          />
+/static/cdd2583c49b42db1fadd0844b226940a/d413f/GenericArchitecture.pdf.png 1985w" sizes="(max-width: 660px) 100vw, 660px" type="image/png">
+          <img class="gatsby-resp-image-image" src="/static/cdd2583c49b42db1fadd0844b226940a/1f083/GenericArchitecture.pdf.png" alt="GenericArchitecture pdf" title="" loading="lazy" decoding="async" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;">
         </picture>
     </span>
-    <figcaption class="gatsby-resp-image-figcaption"><p>Example of Advised architecture</p></figcaption>
-  </figure></p>
+</div>
 <p>In this model we will have:</p>
 <ul>
 <li>2 Instances of Prometheus Server -> One for Production and another for Non-production. You can run this on the same AKS or separate it if you want to split your non-prod and prod metrics.</li>
