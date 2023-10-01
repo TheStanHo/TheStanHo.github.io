@@ -8,20 +8,8 @@
 </ul>
 <p>The simplest option I came across is the Prometheus agent introduced in Prometheus version 2.32.0. The agent mode deactivates certain features typically present in the Prometheus server, focusing solely on discovery, scraping, and remote write functions. This design choice is aimed at enhancing the performance of the Prometheus agent.</p>
 <h2>Overview of the set up</h2>
-<p>In my opinion and experience the best way to implement this is shown in the diagram below.
-<img src="../../images/PrometheusMultiClusterMonitoring/GenericArchitecture.pdf.png" alt="Prometheus architecture" title="Example of Advised architecture">
-<span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 597px; ">
-      <span class="gatsby-resp-image-background-image" style="padding-bottom: 118.18181818181819%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAA7DAAAOwwHHb6hkAAADPElEQVR42pWU328bRRDH/YeChEA8VYgXxAtPiMdSWkBtiCjKU1UJKmiLQmiBVpWISlDBAUrbtI0rHDWOz/adz3e3e/vj7oNmHSf+KcRJY+2Od747O/P9TgNAF5bvL7e4f+NIttR1/b9tEteQRac14tKZXTbe20Or8Z//9VW1AJzuJ6ABUCvN9uYz/rrflqPUlcc5t9K89+EcyDm/mKHSGrAkhWJrJyVODd5bjLVY6+bMBrvbHPH8pcYahffVKaD8KF0Gxxe3Ms5cHLC+mUCtiZOUKIro9/vBot4g+Ld2+ry1FvPB1ZRcGeqqol4ErLn7h+Kdz2Pu/anCBXJzVZ3aJJPWYcm7lyM2bqU4axYzLEuDMYY07tJ60SZNeujjrOe/kIlXdKM+ukhRqgiXzQBOgn9q5nz4ZZd/jnQIdX62OVJDacaTg5KPr6f8/txAbUNjZgHLMeD7V1Le/CThm+1RqNUwzeh2u/R6vWCdowh8wdrNPm9cGHDhegY47CKgwVnNz7sRazc6HEYp1NVyAtae/YOET78+5OF+glY5fv7JUj8BHSY9ilFEHMdU1XKCCwdNKU2T7lryfK6GshBAsdJYCmVO9mJ5UTAYxBhjKcty7LcWXdrg01ovAgYpVdWCTRiQZfnKM9NgJ0+up0Q5Xzp5YmnM8nIu0/JkIeSs8cd0GVNEwESWkqGs7RR96qDlGu/dopZlYZ2h/TTmtx86aGWPQcd1krpNdCz7Cs/LVsKD2x2yocY5O9vlMXU0m5f2Oftqk71f06XPP5EKcHujxdlXmuzeiQMX5exJhsIQ4wwPfjzg2vnHxF11DLhsmIYImvfafHXuEe1nMda7k/sa8gThkwtjqKAoR/jKzRR6vvDeeUqryFRKliXUXmPduDSNyhuetEsu3ox5emDw1sxoc7GzY58xjso5RoXnl8dFiBFONiT9tc2c1871Wd/KwxQ21q/McOITfkrs+ncZb3824NsdFWrZ8K7k0YsR56912WtnYQK7qfm2KkNRlQBcuZPy+kddtv9WUBsaSmlKnYPLg9CFc9PsXwUoFFJKMRwmdKKEbDRklGU0ZHQZ64I2hWvz2lwFKASXOToezmWY+nLBv09iOOKdrNLwAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
-  <picture>
-          <source srcset="/static/fe5260de3967b5db61357c0afb6fbc52/c9b55/GenericArchitecture1.webp 165w,
-/static/fe5260de3967b5db61357c0afb6fbc52/f2908/GenericArchitecture1.webp 330w,
-/static/fe5260de3967b5db61357c0afb6fbc52/9e35d/GenericArchitecture1.webp 597w" sizes="(max-width: 597px) 100vw, 597px" type="image/webp">
-          <source srcset="/static/fe5260de3967b5db61357c0afb6fbc52/04c57/GenericArchitecture1.png 165w,
-/static/fe5260de3967b5db61357c0afb6fbc52/d9ecf/GenericArchitecture1.png 330w,
-/static/fe5260de3967b5db61357c0afb6fbc52/17602/GenericArchitecture1.png 597w" sizes="(max-width: 597px) 100vw, 597px" type="image/png">
-          <img class="gatsby-resp-image-image" src="/static/fe5260de3967b5db61357c0afb6fbc52/17602/GenericArchitecture1.png" alt="GenericArchitecture1" title="" loading="lazy" decoding="async" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;">
-        </picture>
-    </span></p>
+<p>In my opinion and experience the best way to implement this is shown in the diagram below.</p>
+<p><img src="../../images/PrometheusMultiClusterMonitoring/GenericArchitecture.pdf.png" alt="Prometheus architecture" title="Example of Advised architecture"></p>
 <p>In this model we will have:</p>
 <ul>
 <li>2 Instances of Prometheus Server -> One for Production and another for Non-production. You can run this on the same AKS or separate it if you want to split your non-prod and prod metrics.</li>
