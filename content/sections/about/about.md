@@ -1,6 +1,6 @@
 ---
 imageSrc: "../../images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg"
-imageAlt: "Computer through glasses"
+imageAlt: "Computer through glasses."
 ---
 
 Around three years ago, I started my career in DevOps. Initially, I joined the company as an IT graduate and expressed interest in working with a colleague who was solely responsible for deploying cloud resources. This led to the formation of the DevOps team. The company provides healthcare solutions and during the Covid pandemic, the UK government needed a software solution to register vaccinations. I was involved in a project to deploy and monitor this system called <a href="https://www.graphnethealth.com/solutions/vaccinations/" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>NIMs - National Immunisation Management System</u></a>. 
