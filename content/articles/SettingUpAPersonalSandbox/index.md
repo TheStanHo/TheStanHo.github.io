@@ -20,12 +20,11 @@ keywords:
 ---
 
 ## The Idea
-Having been bored over the weekend, as you do of course. I thought I'd spend some time setting up my personal Azure Subscription alongside some basic infrastructure, so that in the future I can have a personal Sandbox in Azure where I can Test and refresh my knowledge of technologies. It would also be usefeul to have for when I learn for some Azure Certifications in the future (so he says).
+Having been bored over the weekend, as you do of course. I thought I'd spend some time setting up my personal Azure Subscription alongside some basic infrastructure, so that in the future I can have a personal Sandbox in Azure where I can test, refresh and reinforce my knowledge of technologies in my arsenal. It would also be useful to have for when I start to work towards some Azure Certifications in the future (so he says).
 
-This would also actually gave me a chance to reinforce technologies that I already know or haven't used in a while. 
 
 ## Technology used
-- Cloud Provider - Had to be Azure of course, mainly because it has been the only cloud provider I have used and one I use for work. I signed up for their [Free account](https://azure.microsoft.com/en-gb/free/). Since they offer $200 free Azure credit it would allow me to see how much money my sandbox environment would actually use, if I decided to upgrade to Pay-As-You-Go in future. (This is where in future I will regret and accidently rack up a bill of 10k). With Azure Pricing calulator though, I have estimated it should cost me no more than around £60 ~ a month if I was on Pay-As-You-Go. Deployng to East US seemed to be the cheapest option.
+- Cloud Provider - Had to be Azure of course, mainly because it has been the only cloud provider I have used and one I use for work. I signed up for their [Free account](https://azure.microsoft.com/en-gb/free/). Since they offer $200 free Azure credit it would allow me to see how much money my sandbox environment would actually use, if I decided to upgrade to Pay-As-You-Go in future. (This is where in future I will regret and accidently rack up a bill of £10k). With Azure Pricing calulator though, I have estimated it should cost me no more than around £60 ~ a month if I was on Pay-As-You-Go, when deployng to East US which seems to be the cheapest option.
 - Infrastructure as Code - I knew to help reduce costs so that I can quickly spin up and down the Sandbox environment I would need to utilise some IaC. It would also allow me to assign some roles to the service principal and managed identities so that when I spin the environment up from scratch I would have less to think about. 
 - CI/CD - For this the obvious choice was Azure DevOps. It also gave me more of a chance to test out what I have learned about Azure Yaml pipelines. 
 
