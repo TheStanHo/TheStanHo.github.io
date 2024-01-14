@@ -32,7 +32,7 @@ This would also actually gave me a chance to reinforce technologies that I alrea
 ### A Scenario - The beauty of a simple task
 So I gave myself a task to come up with some useful cronjob. The Cronjob's purpose I decided was for it to scale down all my deployments at a given time. The beauty of what sounds like a simple task is that it allows me to play with different technologies and reinforce my skillset. For example to do this I used: 
 - Powershell - Used to script the scale down of the deployments which the cronjob ran. You can see this below
-```
+```powershell
     #Get all the deployments from the default namespace
     $deployments = kubectl get deployments -o jsonpath='{.items[*].metadata.name}'
     
@@ -62,7 +62,7 @@ So the outcome of my madness. I now have my infrastructure fully terraformed. It
 - Resource permissions
 Which you can (kind of) see below. Well the resource groups anyway but I can "Azure" you they are there😉.
 ![Stan's Lab](../../images/SettingUpAPersonalSandbox/Azure.png "Resources deployed")
-Since this is done in Terraform I can easily spin this up and down at a click of a button (or two... approver gate you see!). With the pipelines I have set up below for infrastructure, docker builds and also helmchart deployments. All done via Azure Yaml Pipelines
+Since this is done in Terraform I can easily spin this up and down at a click of a button (or two... approver gate you see!). With the pipelines I have set up below for infrastructure, docker builds and also helmchart deployments for such things as Prometheus/Nginx/Cronjob. All done via Azure Yaml Pipelines.
 ![Azure DevOps Pipelines](../../images/SettingUpAPersonalSandbox/Pipelines.png "Azure DevOps Pipelines")
 
-All in all, it was a good mini project to do over the weekend. Which will set me up on the path of refining my skillset and having an environment to play around with. Although, depending on my cost management skills it is debatable whether I regret this in the long run😅. 
+All in all, it was a good mini project to do over the weekend. Which will set me up on the path of refining my skillset and having an environment to play around with. Although, depending on my cost management skills it is debatable whether I'll regret this in the long run😅. 
