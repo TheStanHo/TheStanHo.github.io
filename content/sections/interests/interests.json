@@ -36,6 +36,13 @@
       }
     },
     {
+      "label": "Docker",
+      "image": {
+        "src": "../../images/docker.png",
+        "alt": ""
+      }
+    },
+    {
       "label": "FluentBit",
       "image": {
         "src": "../../images/FluentBit.png",
@@ -74,6 +81,20 @@
       "label": "Retool",
       "image": {
         "src": "../../images/Retool.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Nginx",
+      "image": {
+        "src": "../../images/nginx.png",
+        "alt": ""
+      }
+    },
+    {
+      "label": "Haproxy",
+      "image": {
+        "src": "../../images/haproxy.jpg",
         "alt": ""
       }
     }
