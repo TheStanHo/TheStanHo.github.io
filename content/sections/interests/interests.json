@@ -57,6 +57,13 @@
       }
     },
     {
+      "label": "InfluxDb",
+      "image": {
+        "src": "../../images/influxdb.jpg",
+        "alt": ""
+      }
+    },
+    {
       "label": "Powershell",
       "image": {
         "src": "../../images/Powershell.png",
