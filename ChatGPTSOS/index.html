@@ -29,10 +29,10 @@
 <p>Please note: Security was not the forefront of my mind for this implementation. For example, the username and password are hardcoded for the /token endpoint. In a production environment, I would validate the username and password against a database before generating a JWT token.</p>
 <p>I managed to create 4 api endpoints</p>
 <ol>
-<li>/data - GET - This just returns a string to say "Hey please use the POST method for this endpoint" - Pointless but I just wanted to try creating a simple GET endpoint and as you can imagine... I'm not the creative type.</li>
-<li>/data - POST - This would just return the json body that was sent to the endpoint. But you could see how this could be used to say send data and persist it to some kind of database or send it to an application for further processing for example.</li>
-<li>/token - POST - This would generate a JWT token, if the correct username and password is used. Then it will respond back with a JWT token which you can use on the /run-script endpoint. Useful in future to restrict endpoint request to certain users</li>
-<li>/run-script - POST - This will run a pre-created Powershell script given the correct bearer token and return back the output of the powershell script.</li>
+<li><strong>/data - GET</strong> - This just returns a string to say "Hey please use the POST method for this endpoint" - Pointless but I just wanted to try creating a simple GET endpoint and as you can imagine... I'm not the creative type.</li>
+<li><strong>/data - POST</strong> - This would just return the json body that was sent to the endpoint. But you could see how this could be used to say send data and persist it to some kind of database or send it to an application for further processing for example.</li>
+<li><strong>/token - POST</strong> - This would generate a JWT token, if the correct username and password is used. Then it will respond back with a JWT token which you can use on the /run-script endpoint. Useful in future to restrict endpoint request to certain users</li>
+<li><strong>/run-script - POST</strong> - This will run a pre-created Powershell script given the correct bearer token and return back the output of the powershell script.</li>
 </ol>
 <p>The Swagger created for the endpoints can be seen below
 <figure class="gatsby-resp-image-figure" style="">
@@ -42,30 +42,28 @@
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 85.45454545454545%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7DAAAOwwHHb6hkAAACCklEQVR42p3TS2/aQBSGYf/5Lit1102lbtpV1t1UjdRNowbSEKokhALGwNgeXxhfwHebt8KkUdRAQ2rp8Xc00hyfsWxtNNb5dtbh5nbIebfHj8ufjEY6551LOt0evf4Nvf6AsixbRVE81Ptotqvo3+osbJ+psWA2F0jHRZgWpmWjVECeFw+Nnm0YxytUEOL7ijRN2V5NU7PZNK26ro+erm0YxCmmt8L2V/hh0m465KgJvTBjYicIL0WXCbZKj968t+H21jQNxX2DP+/rf2l5luG5LnmWUlXbpxQHlI/yHxOqMOa8P2TuBGRFSZoXZHnR5mNJlu/qLG/rQ7Rra8O7Lrzvwo2hmIglE7FL3Qww7KjNqRW266af4sYVTlTiRNUT2jCQfJh2OZlfMXJtZp6LcW/me8yX/kNu10SgkOsYuYp2+RdtEAk+WmecOB0GtoEuTXRnSzB1LQzPbnPqmq2FcnDTECcJ9tLqtCCYe3iGpCnr9sNms2FTNzR1/URd1VRlSVVWe2ki8jjVrzidXGEqD6l87KXHch2jkv2CdHWQ1gsM3sy/8FZ8Zbg00V2LO2uGiH2sRGGtX0YrswJnIXGFg21JFsJk+39vj7c72stoXhzw/dc1F5MBQ2PKYDxBOJIoXaNWEWGyautjaRdK55X+idfGZwbuHN2xmPo2YykYOwJjKZFpiJ0ELfmM38RtDjULv8d/AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 116.36363636363636%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADZElEQVR42pWU24/bRBSH/c/yzgvvCCQkXnhA4hVpn4BWSG1BwAIqjcS2sNnEuW7ujhPH8f2SOHZ8Sz7k2e3Sy+62HenTOXPs85uZM8eW+v0+hmmhqhqbzRZlvsAwLPS1ief5BEEo5oPhBNfzGYxm1P4+Z7uNKIqCLMvI8/wGaTQc0mr3+fbke+RWl6fPznj448+c/lHjr9pzXvzb4PFPp/x6+pTf/6wxHCsMhjOiaHe7YKfTJt4XGH6KEyZskpI0TTkejyKhoixLqlEWBcfjQfi3iQnBbrdLGIa4riusYztEUSRefpVqkTf9SuCtHXa7HVx/g6Y7GLaPsrRw/ZBDWbwl+pLbhF47srfZs3BScWzDz9C9lDBKbxLvSr5T0A5iJusdqhmjOTETfcfMiPG2Hy4qtVotsjSlKKqEq6SyyCnuOda9grIsiyJX43A4kGX5nbV7H8QOq55qNNuieatgIVZ7ubvsDV599r9fXCN2GMcxK22FYZhk6Z4kzdlnBUmaXdv8FjLifUaS5cLuklQg9TtNWquUz2rw1dmRL2oHhqpNb6IzXfkMFIPJ0mU4t5hqHtOVx3jpMlrYTDSPkWqjmhusTY4Z5kjtVhPdT3k2KajNMs6UEt3bsrQD1n4kbDVfuVvWXiRiwvcjjGCH5oSYYYy93Qukntyh48/5UnnEN+pvfL34hZG5ZKDNUZw1I11laq0YG0tmto7i6GI+MTVhK2bWCiP2BVJXbjEO15ysnvPQuOAHo45ir5kaKxaexcxcobqmiC1cU8TmjoFa4ZrCVnEzDrHiEKnRaJBXBQ4iPNMltAMOZcnxcBA/g8q/oSgpi/L12HVc3HKWXwnu44TFWOWydcmwMxK9eNMWxYf1pdRuykxDgwfrOk9MmceWzNK30HybpWeh2gZG5GPtgvdC6jXbNFyFTwYP+Hz8hE/HjxiaS3oLhb42pzUbsdw4rGMfffdupIuLi6tvOcvZJ3uyJCXeJ8TpXtg0r5o7JREN/26EYLJL6DS6NOsd5HoLudnh/Fzmoi7juT4cjpR5cXUpeXEvktxsYkcBTUuh6y7oeguMwGPtOZihh73xcbaBwN4EuFGIF2/vRKqf/cMLZ8JHvRNRx48H39HT59RHl4xMjcvVnJ6mMNBVussZM3fNOgnQq5rewn/igMHJqiav6AAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <picture>
           <source
-              srcset="/static/d5a8b5f5c56c24a02c731b1d376e5c90/c9b55/swagger.webp 165w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/f2908/swagger.webp 330w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/cc661/swagger.webp 660w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/a66df/swagger.webp 990w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/20e4c/swagger.webp 1042w"
+              srcset="/static/009203fffdf05eec4a1ac41ee23a45b3/c9b55/swagger.webp 165w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/f2908/swagger.webp 330w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/cc661/swagger.webp 660w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/cf403/swagger.webp 770w"
               sizes="(max-width: 660px) 100vw, 660px"
               type="image/webp"
             />
           <source
-            srcset="/static/d5a8b5f5c56c24a02c731b1d376e5c90/04c57/swagger.png 165w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/d9ecf/swagger.png 330w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/1f083/swagger.png 660w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/7a3d6/swagger.png 990w,
-/static/d5a8b5f5c56c24a02c731b1d376e5c90/5819f/swagger.png 1042w"
+            srcset="/static/009203fffdf05eec4a1ac41ee23a45b3/04c57/swagger.png 165w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/d9ecf/swagger.png 330w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/1f083/swagger.png 660w,
+/static/009203fffdf05eec4a1ac41ee23a45b3/f4b77/swagger.png 770w"
             sizes="(max-width: 660px) 100vw, 660px"
             type="image/png"
           />
           <img
             class="gatsby-resp-image-image"
-            src="/static/d5a8b5f5c56c24a02c731b1d376e5c90/1f083/swagger.png"
+            src="/static/009203fffdf05eec4a1ac41ee23a45b3/1f083/swagger.png"
             alt="Swagger"
             title="Swagger page"
             loading="lazy"
