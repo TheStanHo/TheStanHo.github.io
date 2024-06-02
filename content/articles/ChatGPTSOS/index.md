@@ -3,8 +3,8 @@ title: "Building a simple Python API in 2 Hours with ChatGPT: My Experience"
 description: "Can AI help me code a Python API?"
 date: "2024-06-02"
 banner:
-  src: "../../images/ChatGPTSOS/levart_photographer-7q-kE4SZzvQ-unsplash.jpg"
-  alt: "ChatGPT"
+  src: '../../images/ChatGPTSOS/levart_photographer-7q-kE4SZzvQ-unsplash.jpg'
+  alt: 'OpenAI'
   caption: 'Photo by <u><a href="https://unsplash.com/photos/a-cell-phone-sitting-on-top-of-a-laptop-computer-7q-kE4SZzvQ">Levart_Photographer</a></u>'
 categories:
   - "Personal"
